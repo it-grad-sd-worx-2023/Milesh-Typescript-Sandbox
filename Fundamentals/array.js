@@ -1,0 +1,11 @@
+var skills = [];
+skills[0] = "Problem Solving";
+skills[1] = "Programming";
+skills.push("Software Design");
+console.log(typeof skills, typeof skills[0]);
+console.log(skills.length);
+var series = [1, 2, 3];
+var doubleIt = series.map(function (e) { return e * 2; });
+console.log(doubleIt);
+var even = series.filter(function (e) { return e % 2 === 0; });
+console.log(even);
