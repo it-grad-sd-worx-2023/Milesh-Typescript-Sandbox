@@ -29,4 +29,9 @@ var copyObject = __assign({}, originalObject);
 // console.log(copyObject);
 //modify the object 
 copyObject.age = 50;
-console.log(copyObject);
+// console.log(copyObject)
+var object1 = { first_name: 'Milesh', age: 24 };
+var object2 = { last_name: "Taukoorah", occupation: "Developer" };
+// now we are going to merge object1 with object 2 using spread operator
+var mergedObject = __assign(__assign({}, object1), object2);
+console.log(mergedObject);

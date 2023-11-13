@@ -16,4 +16,11 @@ const copyObject = {...originalObject};
 //modify the object 
 
 copyObject.age = 50;
-console.log(copyObject)
+// console.log(copyObject)
+
+
+const object1 = { first_name: 'Milesh', age: 24};
+const object2= {last_name: "Taukoorah", occupation: "Developer"};
+// now we are going to merge object1 with object 2 using spread operator
+const mergedObject = { ...object1 , ...object2}
+console.log(mergedObject);
