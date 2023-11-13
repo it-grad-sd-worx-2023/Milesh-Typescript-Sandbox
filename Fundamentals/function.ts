@@ -21,13 +21,13 @@ function greet(name: string, greeting: string = "Hello"): void {
 //optional parameter
 
 
-function multiply(a: number, b : number, c?: number): number {
-    if (typeof c !== 'undefined') {
-        return a * b * c;
-    }
-        return a * b;
-}
-multiply(6,5);
+// function multiply(a: number, b : number, c?: number): number {
+//     if (typeof c !== 'undefined') {
+//         return a * b * c;
+//     }
+//         return a * b;
+// }
+// multiply(6,5);
 
 
 
@@ -54,3 +54,24 @@ applyDiscount(100,0.10);
 //   displayTeam('Team A', 'John', 'Jane', 'Bob');
 
 
+
+
+function multiply(a:number , b:number , c?: number) :number {
+    if (typeof c !== 'undefined') {
+        return a*b*c;
+    }
+    return a * b;
+}
+
+multiply(6,5)
+
+
+function getTotal(...numbers : number[]){
+    let total = 0;
+    numbers.forEach(num => total += num);
+    return total;
+}
+
+console.log(getTotal());
+console.log(getTotal(10,20));
+console.log(getTotal(10,20,30))
