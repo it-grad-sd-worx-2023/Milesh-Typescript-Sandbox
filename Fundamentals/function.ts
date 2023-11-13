@@ -27,3 +27,14 @@ function multiply(a: number, b : number, c?: number): number {
     }
         return a * b;
 }
+multiply(6,5);
+
+
+
+// default parameter
+
+function applyDiscount(price : number, discount : number = 0.05) {
+ return price * (1 - discount);
+}
+
+applyDiscount(100,0.10);
