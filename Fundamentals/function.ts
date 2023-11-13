@@ -38,3 +38,19 @@ function applyDiscount(price : number, discount : number = 0.05) {
 }
 
 applyDiscount(100,0.10);
+
+
+// function getTotal
+
+
+// let players = 'Fabrice', 'Noah';
+
+// function displayTeam(teamName, ...players) {
+//     console.log(`Team: ${teamName}`);
+//     console.log('Players: ', players.join(', '));
+//   }
+  
+//   // Example usage
+//   displayTeam('Team A', 'John', 'Jane', 'Bob');
+
+
