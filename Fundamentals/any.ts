@@ -18,3 +18,18 @@ console.log(currentLocation.latitude);
 console.log(currentLocation.x);
 
 
+let result: any;
+result ="test";
+console.log(result);
+
+result = 10;
+console.log(result);
+result = ["patate", 1000,51.123, "hello its me "];
+
+
+
+let resultAny: any;
+resultAny = 10.23;
+// console.log(resultAny.willExist());
+// resultAny.willExist();
+

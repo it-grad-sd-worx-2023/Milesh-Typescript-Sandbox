@@ -5,5 +5,16 @@ var currentLocation = JSON.parse(json);
 console.log(currentLocation);
 // here we are console loggin the currentLocation latitude
 console.log(currentLocation.latitude);
-//this will give us 
+//this will give us why because x doesnt exist in currentLocation
+// when you get undefined error is because the data you are trying to check or fetch is not present in the code .
 console.log(currentLocation.x);
+var result;
+result = "test";
+console.log(result);
+result = 10;
+console.log(result);
+result = ["patate", 1000, 51.123, "hello its me "];
+var resultAny;
+resultAny = 10.23;
+console.log(resultAny.willExist());
+resultAny.willExist();
