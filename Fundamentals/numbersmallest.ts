@@ -15,3 +15,4 @@ for (let i = 1; i < numbers.length; i++) {
 
 // Print the smallest number to the console
 console.log("The smallest number is:", smallestNumber);
+// test of commented out text
