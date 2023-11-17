@@ -1,8 +1,4 @@
-/**
- * Calculates a person's age based on their birth year.
- * @param birthYear - The year the person was born.
- * @returns The person's age as a number.
- */
+
 function calculateAge(birthYear: number): number {
     // Get the current year
     const currentYear: number = new Date().getFullYear();
