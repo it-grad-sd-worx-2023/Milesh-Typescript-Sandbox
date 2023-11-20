@@ -41,3 +41,7 @@ function example(value) {
 }
 example("Hello, Typescript here");
 example(42);
+var someValue = "Hello Typescript!";
+var strLength = someValue.length;
+console.log(someValue);
+console.log(strLength);

@@ -49,4 +49,11 @@ function example(value: string | number):void {
 }
 
 example("Hello, Typescript here");
-example(42)
+example(42);
+
+
+let someValue : any = "Hello Typescript!";
+let strLength: number = (someValue as string).length;
+console.log(someValue);
+console.log(strLength);
+
