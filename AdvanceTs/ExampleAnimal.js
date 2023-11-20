@@ -52,4 +52,13 @@ var personObj = {
     age: 20,
 };
 var typedPerson = personObj;
-console.log(typedPerson);
+console.log(typedPerson.name);
+console.log(typedPerson.age);
+function getNetPrice(price, discount, format) {
+    var netPrice = price * (1 - discount);
+    return format ? "$".concat(netPrice) : netPrice;
+}
+var ourNetPrice = getNetPrice(100, 0.05, true);
+console.log(ourNetPrice);
+var yourNewPrice = getNetPrice(100, 0.05, false);
+console.log(yourNewPrice);

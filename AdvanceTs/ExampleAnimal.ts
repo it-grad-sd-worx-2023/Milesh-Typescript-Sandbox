@@ -73,5 +73,21 @@ console.log( strLength1);
 
 
  let typedPerson = personObj as Person;
- console.log(typedPerson);
+ console.log(typedPerson.name);
+ console.log(typedPerson.age);
+
+
+
+ function getNetPrice(price: number, discount: number, format: boolean): number | string {
+    let netPrice = price *(1 - discount);
+    return format ?  `$${netPrice}` : netPrice; 
+ }
+
+
+ let ourNetPrice = getNetPrice(100,0.05, true) as string;
+ console.log(ourNetPrice);
+
+ let yourNewPrice = getNetPrice(100,0.05,false) as number; 
+ console.log(yourNewPrice);
+ 
  
