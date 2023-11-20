@@ -62,3 +62,5 @@ var ourNetPrice = getNetPrice(100, 0.05, true);
 console.log(ourNetPrice);
 var yourNewPrice = getNetPrice(100, 0.05, false);
 console.log(yourNewPrice);
+var yourNetPrice1 = getNetPrice(100, 0.05, false);
+console.log(yourNetPrice1);

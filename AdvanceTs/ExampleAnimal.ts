@@ -90,4 +90,6 @@ console.log( strLength1);
  let yourNewPrice = getNetPrice(100,0.05,false) as number; 
  console.log(yourNewPrice);
  
+ let yourNetPrice1 = <number>getNetPrice(100,0.05,false);
+ console.log(yourNetPrice1);
  
