@@ -26,3 +26,18 @@ var myDog = new Dog();
 var myCat = new Cat();
 animalMakeSound(myCat);
 animalMakeSound(myDog);
+//function with string type checking 
+// cehking the return type of  value is indeed string.
+function isString(value) {
+    return typeof value === "string";
+}
+function example(value) {
+    if (isString(value)) {
+        console.log(value.length);
+    }
+    else {
+        console.log(value);
+    }
+}
+example("Hello, Typescript here");
+example(42);
