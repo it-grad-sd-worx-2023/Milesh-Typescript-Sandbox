@@ -11,9 +11,12 @@ class ToDoList {
      addItem(text: string) : void {
         const newItem = new ToDoItem(this.items.length + 1, text, false);
         this.items.push(newItem);
+        this.saveToLocalStorage();
+        //  the code will run when we complete any task of anytime the list changes
+        // it will write it in the storage.
      }
 
-     getItem():  ToDoItem[] {
+     getItems():  ToDoItem[] {
         return this.items;
      }
 
@@ -29,3 +32,21 @@ class ToDoList {
 
         }
      }
+
+
+     //  now we will access the local store to try to get it back so that we can assign it to the todo list 
+     // so that we can work with it. 
+     const todolist = new ToDoList();
+
+
+     const storedItems = localStorage.getItem('todos');
+     if(storedItems) {
+        todolist.items = JSON.parse(storedItems);
+     }
+
+     //adding item to the TodoList
+
+
+     todolist.addItem('Eat 3 slices of Pizza');
+     console.log('todo items', todolist.getItems());
+
