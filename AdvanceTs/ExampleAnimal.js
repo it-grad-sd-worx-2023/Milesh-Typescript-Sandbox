@@ -45,3 +45,5 @@ var someValue = "Hello Typescript!";
 var strLength = someValue.length;
 console.log(someValue);
 console.log(strLength);
+var strLength1 = someValue.length;
+console.log(strLength1);

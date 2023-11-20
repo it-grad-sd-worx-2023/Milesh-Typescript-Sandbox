@@ -57,3 +57,6 @@ let strLength: number = (someValue as string).length;
 console.log(someValue);
 console.log(strLength);
 
+
+let strLength1: number = (<string>someValue).length;
+console.log( strLength1);
