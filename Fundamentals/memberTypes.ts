@@ -1,4 +1,7 @@
 class Person {
+    getName(): any {
+        throw new Error("Method not implemented.");
+    }
     name:string;
     age: number;
     city: boolean;
@@ -6,7 +9,7 @@ class Person {
 }
 
 const person = new Person();
-person.name = "hello"
+person.name = "hello";
 person.age = 10;
 person.city = true;
 person.address = "Port Louis";
