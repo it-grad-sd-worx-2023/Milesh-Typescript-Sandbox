@@ -26,3 +26,11 @@ const myCat : Cat  = new Cat();
 
 animalMakeSound(myCat);
 animalMakeSound(myDog);
+
+
+
+//function with string type checking 
+
+function isString(value: any) : value is string{
+return typeof value === "string";
+}
