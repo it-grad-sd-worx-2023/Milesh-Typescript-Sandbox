@@ -47,3 +47,9 @@ console.log(someValue);
 console.log(strLength);
 var strLength1 = someValue.length;
 console.log(strLength1);
+var personObj = {
+    name: "Milesh",
+    age: 20,
+};
+var typedPerson = personObj;
+console.log(typedPerson);

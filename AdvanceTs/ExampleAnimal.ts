@@ -60,3 +60,18 @@ console.log(strLength);
 
 let strLength1: number = (<string>someValue).length;
 console.log( strLength1);
+
+ interface Person {
+    name: string;
+    age: number;
+ }
+
+ let personObj : any = {
+    name: "Milesh",
+    age: 20,
+ }
+
+
+ let typedPerson = personObj as Person;
+ console.log(typedPerson);
+ 
