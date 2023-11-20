@@ -10,3 +10,4 @@ function printItemLength(value: string | number):void{
 
 printItemLength("QWERTY");
 printItemLength(8634);
+
