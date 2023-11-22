@@ -44,3 +44,5 @@ let c1 : Customer ={
 console.log(e1);
 console.log(c1);
 
+
+
