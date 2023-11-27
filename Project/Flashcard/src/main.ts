@@ -29,6 +29,7 @@ function showFlashCards(){
 
        `
        content.appendChild(cardDiv);
+       cardDiv.addEventListener('click', flipCard)
     }
 }
 
