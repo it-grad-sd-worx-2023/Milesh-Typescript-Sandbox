@@ -1,22 +1,8 @@
-// Define the User interface with name, age, and occupation properties
-interface User {
-    name: string;
-    age: number;
-    occupation: string;
-}
-
-// Define the Admin interface with name, age, and role properties
-interface Admin {
-    name: string;
-    age: number;
-    role: string;
-}
-
-// Define the Person type as a union of User and Admin
-export type Person = User | Admin;
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.logPerson = exports.persons = void 0;
 // Array of Person objects
-export const persons: Person[] = [
+exports.persons = [
     {
         name: 'Max Mustermann',
         age: 25,
@@ -38,20 +24,17 @@ export const persons: Person[] = [
         role: 'World saver'
     }
 ];
-
 // Function to log information about a person (User or Admin)
-export function logPerson(person: Person) {
+function logPerson(person) {
     // Log person's name and age
-    console.log(` - ${person.name}, ${person.age}`);
-
+    console.log(" - ".concat(person.name, ", ").concat(person.age));
     // Use type assertion to check if the person is an Admin and log the role if applicable
-    if ((person as Admin).role) {
-        console.log(`   (Admin) Role: ${(person as Admin).role}`);
+    if (person.role) {
+        console.log("   (Admin) Role: ".concat(person.role));
     }
 }
-
+exports.logPerson = logPerson;
 // Output header
 console.log('Persons:');
-
 // Loop through each person and log their information
-persons.forEach(logPerson);
+exports.persons.forEach(logPerson);

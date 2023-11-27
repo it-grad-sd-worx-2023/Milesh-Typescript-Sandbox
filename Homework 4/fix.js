@@ -1,12 +1,8 @@
-// Define the User type with name, age, and occupation properties
-export type User = {
-    name: string;
-    age: number;
-    occupation: string;
-};
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.logPerson = exports.users = void 0;
 // Array of User objects
-export const users: User[] = [
+exports.users = [
     {
         name: 'Max Mustermann',
         age: 25,
@@ -18,15 +14,13 @@ export const users: User[] = [
         occupation: 'Astronaut'
     }
 ];
-
 // Function to log information about a user
-export function logPerson(user: User) {
+function logPerson(user) {
     // Log user's name and age
-    console.log(` - ${user.name}, ${user.age}`);
+    console.log(" - ".concat(user.name, ", ").concat(user.age));
 }
-
+exports.logPerson = logPerson;
 // Output header
 console.log('Users:');
-
 // Loop through each user and log their information
-users.forEach(logPerson);
+exports.users.forEach(logPerson);
