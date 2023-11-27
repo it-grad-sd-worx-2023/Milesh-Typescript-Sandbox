@@ -33,7 +33,8 @@ function showFlashCards(){
 }
 
 function flipCard(): void {
-
+ const currentSide = this.querySelector('p:not(.d-none)');
+ const filpSide = this.querySelector('p.d-none');
 } 
 
 
