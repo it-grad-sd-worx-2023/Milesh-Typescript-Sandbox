@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "outDir": "dist",
+        "module": "ES2015",
+        "removeComments": true,
+        "moduleResolution": "Node"
+    }
+}

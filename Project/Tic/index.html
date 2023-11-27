@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    th {
+      background-color: #ddd;
+    }
+
+    td {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tic-Tac-Toe</h1>
+
+  <table id="game-board">
+    <tr>
+      <td onclick="makeMove(0, 0)"></td>
+      <td onclick="makeMove(0, 1)"></td>
+      <td onclick="makeMove(0, 2)"></td>
+    </tr>
+    <tr>
+      <td onclick="makeMove(1, 0)"></td>
+      <td onclick="makeMove(1, 1)"></td>
+      <td onclick="makeMove(1, 2)"></td>
+    </tr>
+    <tr>
+      <td onclick="makeMove(2, 0)"></td>
+      <td onclick="makeMove(2, 1)"></td>
+      <td onclick="makeMove(2, 2)"></td>
+    </tr>
+  </table>
+
+  <p id="status"></p>
+
+  <script>
+    // JavaScript code for handling the game logic
+
+    // ... (Place the TypeScript code here, starting from class TicTacToe declaration)
+
+    // Example usage:
+    const ticTacToe = new TicTacToe();
+
+    function makeMove(row, col) {
+      if (!ticTacToe.isGameOver() && ticTacToe.isValidMove(row, col)) {
+        ticTacToe.makeMove(row, col);
+        updateBoard();
+        if (ticTacToe.isGameOver()) {
+          displayResult();
+        }
+      }
+    }
+
+    function updateBoard() {
+      const gameBoard = document.getElementById('game-board');
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          const cell = gameBoard.rows[i].cells[j];
+          cell.textContent = ticTacToe.board[i][j];
+        }
+      }
+    }
+
+    function displayResult() {
+      const statusElement = document.getElementById('status');
+      if (ticTacToe.winner) {
+        statusElement.textContent = `Player ${ticTacToe.winner} wins!`;
+      } else {
+        statusElement.textContent = "It's a draw!";
+      }
+    }
+
+    // Initial board update
+    updateBoard();
+  </script>
+
+<script type="module" src="dist/tic.js"></script>
+</body>
+</html>
